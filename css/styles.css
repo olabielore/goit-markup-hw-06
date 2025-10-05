@@ -149,7 +149,7 @@ img {
     color: #4d5ae5;
     display: inline-block;
 
-    @media screen and (min-width: 786px) {
+    @media screen and (min-width: 768px) {
         margin-right: 120px;
     }
 
@@ -295,15 +295,43 @@ img {
 
 /* ===== Hero Section ===== */
 .order-service-section {
-    max-width: 1440px;
+    max-width: 320px;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-bg.jpg);
+        url(../images/mobile/hero-mobilejpg.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+
+        @media screen and (min-resolution: 192dpi) {
+           background-image:
+           linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/mobile/hero-mobile@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        height: 436px;
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/tablet/hero-tablet.jpg);
+    }
+        @media screen and (min-resolution: 192dpi) {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/tablet/hero-tablet@2x.jpg);
+        }
+
+    @media screen and (min-width: 1158px) {
+        max-width: 1440px;
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg.jpg);
+    }
+        @media screen and (min-resolution: 192dpi) {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg@2x.jpg);
+        }
 }
 
 .hero {
@@ -312,8 +340,23 @@ img {
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    padding: 188px 15px;
-}
+    padding: 72px 52px;
+    height: 432px;
+
+    @media screen and (min-width: 768px) {
+        padding: 112px 136px;
+        width: 768px;
+        height: 436px;
+    }
+
+    @media screen and (min-width: 1158px) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-position: center;
+      padding: 188px 15px;
+    } 
+} 
 
 .title {
     font-size: 56px;
@@ -323,12 +366,25 @@ img {
 }
 
 .order-service-title {
-    line-height: 1.07;
-    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
     color: #ffffff;
-    margin-bottom: 24px;
-    border: unset;
-    max-width: 496px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+
+    @media screen and (min-width: 768px) {  
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        margin-bottom: 48px;
+        border: unset;
+    }
+
 }
 
 .button-title {
@@ -338,7 +394,6 @@ img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 48px;
 }
 
 /* ===== Benefits Section ===== */
