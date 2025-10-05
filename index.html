@@ -40,15 +40,20 @@
               <a href="./Contacts/index.html" class="menu-item">Contacts</a>
             </li>
           </ul>
+          <div class="burger-menu">
+            <svg class="burger-icon" width="18" height="16">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </div>
         </nav>
         <address class="address">
           <ul class="address-title">
-            <li class="medium-text">
+            <li>
               <a href="mailto:info@devstudio.com" class="contact"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="medium-text">
+            <li>
               <a href="tel:+110001111111" class="contact"
                 >+11 (000) 111-11-11</a
               >
@@ -60,7 +65,7 @@
 
     <main>
       <!-- section 1 -->
-      <section class="order-service-section">
+      <section class="hide order-service-section">
         <div class="container hero">
           <h1 class="title order-service-title">
             Effective Solutions <br />
@@ -73,7 +78,7 @@
       </section>
 
       <!-- section 2 -->
-      <section class="benefit-section">
+      <section class="hide benefit-section">
         <div class="container">
           <h2 class="visually-hidden Benefits-title">
             Benefits working with us
@@ -133,7 +138,7 @@
       </section>
 
       <!-- section 3 -->
-      <section class="our-team-section">
+      <section class="hide our-team-section">
         <div class="container container-team">
           <h2 class="header-medium our-team-title">Our Team</h2>
           <ul class="card-list">
@@ -310,7 +315,7 @@
       </section>
 
       <!-- section 4 -->
-      <section class="portfolio">
+      <section class="hide portfolio">
         <div class="container container-portfolio">
           <h2 class="header-medium portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -438,7 +443,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="hide footer">
       <div class="container container-footer">
         <div class="logo-footer-wrapper">
           <a href="./index.html" class="logo logo-footer"
@@ -506,7 +511,7 @@
       </div>
     </footer>
     <!---- modal ---->
-    <div class="backdrop is-open">
+    <div class="hide backdrop is-open">
       <!-- is-open -->
       <div class="modal">
         <button class="modal-close-btn" type="button">
