@@ -120,12 +120,6 @@ img {
     background-color: #404BBF;
 }
 
-.card-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
 /* ===== Header ===== */
 .header-container {
     padding: 16px;
@@ -477,7 +471,11 @@ img {
 /* ===== Our Team Section ===== */
 .our-team-section {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0;
+
+    @media screen and (min-width: 1158px) {
+        padding: 120px 0;
+    }
 }
 
 .our-team-title {
@@ -488,11 +486,33 @@ img {
     margin-bottom: 72px;
 }
 
+.card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+
+    @media screen and (min-width: 768px) {
+        gap: 24px;
+        row-gap: 64px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1158px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}
+
 .teammate-wrapper {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     /* width: calc((100% - 72px) / 4); */
+    width: 264px;
 }
 
 .teammate {
